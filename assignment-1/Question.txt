@@ -1,0 +1,6 @@
+1.a)Write a program in C++,to print  sum of  first 10 numbers of an integer array. Use a function call to calculate the sum.
+    b)Rewrite the same code, using default arguments for  first 5 numbers, and show the result.
+ 
+ 2. Write a program to print an integer ,a double ,a character and a string variable using function overloading.
+ 3. Rewrite,the 1a) program by using new []and delete []operator for dynamic memory allocation.
+
