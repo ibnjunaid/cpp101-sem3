@@ -21,11 +21,11 @@ public:
 	int getCents() const { return m_cents; }
 
     bool operator !=(const Cents &c){
-        return (*this not_eq c);
+        return (this->getCents() not_eq c.getCents());
     }
 
     bool operator ==(const Cents &c){
-        return not(*this not_eq c);
+        return not(this->getCents() not_eq c.getCents());
     }
 
     bool operator >(const Cents &c){
@@ -63,6 +63,7 @@ int main(){
 	//Cents centsSum(cents1 + cents2 );
 	Cents centsSum = cents1 + cents2;
 	cout << "I have " << centsSum.getCents() << " cents.\n";
-    std::cout<< (cents1 < cents2);
+    std::cout<< (cents1 < cents2)<<std::endl;
+    std::cout<< (cents1 != cents2);
 	return 0;
 }
